@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reasoning-workflows"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["reasoning_workflows*"]
+
+[project.optional-dependencies]
+runtime = ["omegaconf", "numpy", "pandas", "tqdm", "datasets", "openai", "google-generativeai", "langchain<0.4", "langchain-openai<0.4"]
